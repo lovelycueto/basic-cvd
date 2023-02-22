@@ -10,7 +10,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+
   html,
   body,
   div,
@@ -80,12 +80,12 @@
     scroll-behavior: smooth;
     list-style: none;
   }
-  
+
   html {
     font-size: 62.5%;
     height: 100%;
   }
-  
+
   body {
     color: #2b2b2b;
     font-family: "Poppins", sans-serif;
@@ -93,12 +93,12 @@
     overflow-x: hidden;
     line-height: 1.4;
   }
-  
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
+
   article,
   aside,
   footer,
@@ -314,8 +314,8 @@ header .header__nav ul li:hover{
         font-size: 3rem;
         margin: 0 auto;
     }
-   
-   
+
+
 }
 
 
@@ -325,30 +325,30 @@ header .header__nav ul li:hover{
     background: #2b2b2b;
     padding: 8rem 0;
   }
-  
+
   .hm-services .hm-services__item i{
     font-size: 6rem;
     color: #ffa700;
     margin-bottom: 2rem;
   }
-  
+
   .hm-services .hm-services__item h4{
     color: #ffa700;
     font-size: 2.5rem;
     font-weight: 600;
   }
-  
+
   .hm-services .hm-services__item p{
     color: #ffffff;
     margin: 2rem 0;
     text-align: justify;
   }
-  
+
   .hm-services .hm-services__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .hm-services .hm-services__item{
       text-align: center;
       margin: 0 4rem;
@@ -358,10 +358,10 @@ header .header__nav ul li:hover{
     .hm-services .hm-services__wrapper{
       grid-template-columns: 1fr;
         row-gap: 8rem;
-    
+
     }
 }
- 
+
 
 /*--------------REPEATABLE PATTERN---------------*/
 
@@ -387,6 +387,10 @@ header .header__nav ul li:hover{
     color:#ffffff;
 }
 
+.bg--dark:hover{
+    background: #f5f5f5;
+    color: #2b2b2b;
+}
 
 
 /*------------ABOUT ME--------------*/
@@ -397,28 +401,28 @@ header .header__nav ul li:hover{
     padding-top: 1rem;
 }
 .about .about__wrapper{
-    display: flex;  
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .about .about__text{
     margin-right: 10rem;
-    
+
 }
 .about .about__text h1{
     color: #ffa700;
     font-size: 2rem;
     font-weight: 800;
     line-height: 1.2;
-   
+
 }
 
 .about .about__text p{
     max-width: 50rem;
     text-align: justify;
     margin: 3rem 0 ;
-   
+
 
 }
 
@@ -427,6 +431,8 @@ header .header__nav ul li:hover{
     width: 50rem;
     margin-bottom: 3rem;
 }
+
+/*------MEDIA QUERY--------*/
 
 @media screen and (max-width:500px){
     .about .about__wrapper{
@@ -447,5 +453,420 @@ header .header__nav ul li:hover{
         max-width: fit-content;
         font-size: 3rem;
         margin: 0 auto;
+    }
+}
+
+
+/*------LATEST TRENDS------*/
+.latest__update{
+    background-color: #2b2b2b;
+    color:#ffffff;
+    padding: 5rem 0;
+
+}
+
+.latest__update .latest_update_title{
+    margin-bottom: 5rem;
+}
+
+.latest__update h2{
+    color: #ffa700;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.latest__update .latest_update_title p{
+    font-size: 2rem;
+}
+
+.latest__wrapper a{
+    color: #ffa700;
+}
+
+.latest__update p{
+    color: #ffffff;
+}
+
+.latest__update .latest__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 3rem; */
+    grid-gap: 5rem;
+  }
+
+  
+
+  .latest__wrapper .latest__card h4{
+    color: #ffa700;
+  }
+  .latest__wrapper .latest__card p{
+    color:#2b2b2b;
+  }
+  .latest__update .latest__card{
+    background: #ffffff;
+    border-radius: 3rem;
+  }
+
+  .latest__update .latest__card img{
+    width: 100%;
+  }
+
+  
+  .latest__update .latest__card .latest__card__text{
+    padding: 2rem;
+  }
+
+  .latest__update .latest__card .latest__card__text h4{
+    color: #ffa700;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .latest__update .latest__card .latest__card__text p{
+    margin: 2rem 1rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: justify;
+    
+  }
+
+  @media screen and (max-width:500px){
+    .latest__update .latest__wrapper{
+      display: block;
+        
+    }
+
+    .latest__update .latest_update_title{
+        text-align: center;
+    }
+
+    .latest__update .latest__card {
+        margin: 0 3rem;
+    }
+    .latest__update .latest__card:nth-child(2){
+        margin: 5rem 3rem;
+
+    }
+}
+
+/*----------CONTACT---------------- */
+.contact{
+    background-color: #ffa700;
+    padding: 5rem 0;
+}
+
+.contact .contact__wrapper {
+    text-align: center;
+    color: #2b2b2b;
+    line-height: 2;
+}
+
+.contact .contact__wrapper p{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact .contact__wrapper h3{
+    font-weight: 800;
+}
+
+@media screen and (max-width:500px){
+    .contact .contact__wrapper{
+      display: block;
+        
+    }
+}
+
+/*------FOOTER------*/
+
+.footer{
+    background-color: #2b2b2b;
+    padding: 5rem 0;
+}
+
+.footer__wrapper .footer__text {
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.footer__wrapper .footer__text ul {
+        display: flex;
+    
+    }
+
+
+.footer__wrapper .footer__text a{
+    color: #ffffff;
+
+}
+
+ .footer__wrapper .footer__text p{
+    color: #ffffff;
+    padding: 2rem 0;
+    align-items: center;
+
+}
+
+ .footer__wrapper .footer__text i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.footer__wrapper #last{
+    color: #ffffff;
+    display: flex;
+   
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:500px){
+    .footer__wrapper .footer__text{
+      flex-direction: column;
+      text-align: center;
+    }
+     .footer__wrapper .footer__text ul p{
+    text-align: center;
+    }
+
+    .footer__wrapper .footer__text ul {
+        justify-content: center;
+        }
+
+    .footer__wrapper .footer__text ul li{
+        justify-content: center;
+    }
+    
+    .footer__wrapper{
+        display: block;
+    }
+
+    .footer__text{
+        display: block;
+    }
+
+    .footer p#last{
+    justify-content: center;
+    }
+ }
+
+ 
+
+
+ /*-----ABOUT ME------- */
+ /* .aboutme{
+    background-color:#ffffff;
+    color: #2b2b2b;
+ }
+
+ .aboutme .about__text h1{
+    color: #ffa700;
+ } */
+
+ .aboutme{
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+}
+.aboutme .aboutme__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .aboutme .aboutme__wrapper img{
+    padding: 0 20rem;
+
+} */
+
+
+.aboutme .about__text{
+    margin-right: 10rem;
+}
+.aboutme .aboutme__text h1{
+    color: #ffa700;
+    font-size: 7rem;
+    font-weight: 800;
+    max-width: 40rem;
+    line-height: 1;
+}
+
+.aboutme .aboutme__text p{
+    max-width: 60rem;
+    text-align: justify;
+    margin: 3rem 0;
+
+}
+
+.aboutme .icons {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+
+/* .aboutme__text .icons{
+    align-items: right;
+} */
+
+.aboutme .icons ul {
+    display: flex;
+    /* margin-right: 3rem 0; */
+}
+
+.aboutme__wrapper .icons ul li {
+    /* margin-right: 3rem ; */
+    /* margin: 10rem 0; */
+}
+
+.abouttt {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aboutme .icons i{
+    color: #ffa700;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.aboutme i{
+    color: #ffa700;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:500px){
+    .aboutme .aboutme__wrapper{
+        flex-direction: column-reverse;
+    }
+    .aboutme img{
+        margin-left: 0;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    .aboutme .aboutme__text{
+        text-align: center;
+        margin: 0;
+    }
+
+    .aboutme .aboutme__text h1{
+        max-width: fit-content;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+    
+    .abouttt .aboutme__text p{
+        /* display: flex;
+        justify-content: center; */
+        max-width: 40rem;
+    }
+
+.aboutme .icons {
+    justify-content: center;
+}
+
+}
+
+
+/*-----RECENT----*/
+.recent{
+    background-color: #2b2b2b;
+    padding: 5rem 0;
+}
+
+.recent .recent__title h3{
+color: #ffa700;
+font-size: 3rem;
+font-weight: 600;
+}
+.recent .recent__title p{
+    color: #f5f5f5;
+}
+
+.recent .recent__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 3rem; */
+    grid-gap: 5rem;
+    padding-top: 8rem;
+  }
+
+  
+
+  .recent__wrapper .recent__card h4{
+    color: #ffa700;
+  }
+  .recent__wrapper .recent__card p{
+    color:#2b2b2b;
+  }
+  .recent .recent__card{
+    background: #ffffff;
+    border-radius: 3rem;
+  }
+
+  .recent .recent__card img{
+    width: 100%;
+  }
+
+  
+  .recent .recent__card .recent__card__text{
+    padding: 2rem;
+  }
+
+  .recent .recent__card .recent__card__text h4{
+    color: #ffa700;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .recent .recent__card .recent__card__text p{
+    margin: 2rem 1rem;
+    /* font-weight: 600; */
+    font-size: 1.8rem;
+    text-align: justify;
+    
+  }
+
+  @media screen and (max-width:500px){
+    .recent .recent__wrapper{
+      display: block;
+        
+    }
+
+    .recent .recent__title{
+        text-align: center;
+    }
+
+    .recent .recent__card {
+        margin: 0 3rem;
+    }
+    .recent .recent__card:nth-child(2){
+        margin: 5rem 3rem;
+
+    }
+    .recent .recent__card:nth-child(3){
+        margin: 5rem 3rem;
+
+    }
+    .recent .recent__card:nth-child(4){
+        margin: 5rem 3rem;
+
+    }
+    .recent .recent__card:nth-child(5){
+        margin: 5rem 3rem;
+
+    }
+    .recent .recent__card:last-child{
+        margin: 5rem 3rem;
+
     }
 }
